@@ -1,0 +1,23 @@
+{
+  "name": "timer-coodex",
+  "version": "1.0.0",
+  "description": "Verdant Focus premium timer app",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "build:js": "esbuild src/app.jsx --bundle --format=iife --platform=browser --target=es2018 --jsx=automatic --outfile=app.js",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./styles.css --minify",
+    "build": "npm.cmd run build:js && npm.cmd run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "esbuild": "^0.27.4",
+    "framer-motion": "^12.38.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^3.4.17"
+  }
+}
